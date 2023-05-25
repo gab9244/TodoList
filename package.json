@@ -1,0 +1,27 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gab9244/TodoList.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gab9244/TodoList/issues"
+  },
+  "homepage": "https://github.com/gab9244/TodoList#readme",
+  "dependencies": {
+    "moment": "^2.29.4",
+    "webpack": "^5.82.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.2"
+  }
+}

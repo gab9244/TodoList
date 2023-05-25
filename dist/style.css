@@ -1,0 +1,431 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+:root {
+    --cor0:#304653;
+    --cor1:#FFAF3E;
+    --cor2:#B12E65;
+    --cor3:#FFCA42;
+
+}
+body {
+ display: flex;
+ flex-direction: column;
+
+}
+header {
+    display: grid;
+    background-color: var(--cor0);
+    color: white;
+
+}
+
+#hamburgerMenu {
+   display: none;
+}
+#Logo{
+    display: grid;
+    grid-template-columns: 100px 200px;
+    align-items: center;
+}
+#LogoImage {
+   background-image: url("/imagens/notes.png");
+   background-repeat: no-repeat;
+   background-size: 80px;
+   height: 100px;
+    
+}
+#UIS {
+    display: flex;
+    height: 85.6vh;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor3);
+    width: 300px;
+    justify-items: center;
+    align-content: center;
+}
+
+
+nav button {
+    border: none;
+    background-color: var(--cor3);
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    
+ 
+}
+nav button:hover {
+    background-color: var(--cor0);
+    color: white;
+}
+
+
+
+
+#projectsList{
+   width: 100%;
+}
+.newprojectButton{
+   display: flex;
+   background-color: red;
+   height: 50px;
+   align-items: center;
+   justify-content: space-around;
+}
+#addProject {
+
+ width: 10px;
+}
+
+#addProjectsPanel {
+   display: flex;
+   flex-direction: column;
+}
+#projectsname{
+   height: 20px;
+   font-size: 15px;
+   border: none;
+}
+#projectButtons {
+   display: flex;
+   margin-top: 5px;
+
+
+}
+#projectButtons button {
+   height: 30px;
+   font-size: 16px;
+}
+#addProjectButton{
+   background-color: rgb(108, 249, 68);
+   margin-right: 10px;
+}
+ #cancelProjectButton{
+  background-color: rgb(255, 134, 134);
+ }
+main {
+    display: flex;
+    justify-content: center;
+    
+    background-color: var(--cor1);
+    width: 100%;
+
+}
+#mainDiv {
+    margin-top: 5em;
+   
+    
+
+}
+
+#mainDiv h2{
+    color: white;
+    padding-bottom: 10px;
+    
+
+}
+
+ main button {
+     height: 20px;
+     width: 25vw;
+     border: none;
+
+     border: 1px solid black;
+ }
+
+
+ #projectName{
+    font-size: 20px;
+ }
+#TaskList{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 484px;
+   
+    }
+
+ #addTask{
+     text-align: start;
+     font-size: 20px;
+     border: none;
+     height: 60px;
+     border-radius: 10px;
+     box-shadow: 2px 2px 5px 0;
+    
+ }
+ #addTask:hover {
+    background-color: var(--cor0);
+    color: white;
+    
+ }
+ #TaskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   height: 40px;
+   font-size: 20px;
+   border: none;
+    text-align: start;
+   transition: 0.25s;
+   padding: 10px;
+   width: 100%;
+   border-radius: 10px;
+ }
+ #TaskItem:hover {
+    background-color: var(--cor0);
+    color: white;
+
+ }
+
+
+ #leftPart {
+    display: flex;
+ }
+    #leftPart input{
+        margin-right: 10px;
+    }
+    #checkbox {
+        background-color: white;
+        border-radius: 20px;
+        border: 2.5px solid black;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+   
+
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px 16px 12px 16px;
+      }
+      .close:hover {
+        background-color: #f44336;
+        color: white;
+      }
+
+ #newTask {
+ display: flex;
+ flex-direction: column;
+ 
+
+ }
+ #newTask input {
+    font-size: 18px;
+    height: 30px;
+    border: none;
+    border-radius:5px;
+ }
+ #Adicionar{ 
+    width: 25vw;
+    height: 30px;
+    border: none;
+    border-radius:5px;
+    background-color: rgb(108, 229, 74);
+    margin: 10px;
+    font-size: 18px;
+ }
+ #Cancelar{
+    width: 25vw;
+    height: 30px;
+    border: none;
+    border-radius:5px;
+    background-color:  rgb(255, 158, 158);
+    font-size: 18px;
+
+ }
+
+ #todayDiv {
+    margin-top: 5em;
+    width: 25vw;
+    height: 100px;
+  
+ }
+ #todayTitle{
+    text-align: center;
+  
+   
+ }
+ #Today{
+    color: white;
+    padding-bottom: 10px;
+ 
+ 
+ }
+ #todayTaskList{
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0;
+ }
+
+
+
+ #ThisWeekDiv {
+    margin-top: 5em;
+    width: 25vw;
+    height: 100px;
+ }
+ #weekTitle{
+    text-align: center;
+  
+
+ }
+ #Week {
+    color: white;
+    padding-bottom: 10px;
+ }
+ #weekList{
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0;
+ }
+
+
+
+
+ .newProjectsDiv {
+   margin-top: 5em;
+  
+ }
+ .addNewProjectTask{
+   text-align: start;
+     font-size: 20px;
+     border: none;
+     height: 60px;
+     border-radius: 10px;
+     box-shadow: 2px 2px 5px 0;
+ }
+ .newProjectTask{
+   display: flex;
+   flex-direction: column;
+ }
+.newProjectAddTask {
+   text-align: start;
+   font-size: 20px;
+   border: none;
+   height: 60px;
+   border-radius: 10px;
+   box-shadow: 2px 2px 5px 0;
+}
+
+.newProjectAddTask:hover {
+  background-color: var(--cor0);
+  color: white;
+  
+}
+
+
+ .newProjectTask input {
+    font-size: 18px;
+    height: 30px;
+    border: none;
+    border-radius:5px;
+ }
+ .newAdicionar{ 
+   width: 25vw;
+   height: 30px;
+   border: none;
+   border-radius:5px;
+   background-color: rgb(108, 229, 74);
+   margin: 10px;
+   font-size: 18px;
+}
+.newCancelar{
+   width: 25vw;
+   height: 30px;
+   border: none;
+   border-radius:5px;
+   background-color:  rgb(255, 158, 158);
+   font-size: 18px;
+
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 2em;
+   
+   font-size: 20px;
+   background: var(--cor0);
+   color: white;
+
+}
+#linkToGit{
+    text-decoration: none;
+    color: white;
+ }
+
+
+ @media(max-width:768px){
+  header{
+   display: flex;
+   background-color: var(--cor0);
+   color: white;
+   align-items: center;
+   justify-content: space-around;
+}
+
+
+ #hamburgerMenu{
+   display: block;
+ }
+ 
+
+ #mainDiv {
+   width: 100%;
+   text-align: center;
+ }
+#addTask {
+   width: 50%;
+}
+#TaskList {
+   width: 100%;
+}
+#TaskItem {
+   width: 100%;
+}
+#todayDiv{
+   width: 100%;
+}
+#ThisWeekDiv{
+   width: 100%;
+}
+.newProjectsDiv{
+   width: 100%;
+   text-align: center;
+}
+.newProjectAddTask{
+   width: 50%;
+}
+     nav{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: var(--cor1) ;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+     }
+
+     
+
+  nav.active {
+   left: 0;
+  }
+
+}
